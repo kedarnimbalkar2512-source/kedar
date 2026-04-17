@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VitalID — Your Health, One Scan Away</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAVIGATION ── -->
+<nav>
+  <div class="nav-logo">
+    <div class="nav-logo-pulse"></div>
+    VitalID
+  </div>
+  <ul class="nav-links">
+    <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="#patient">Patient</a></li>
+    <li><a href="#doctor">Doctor</a></li>
+    <li><a href="#case-board">Case Board</a></li>
+    <li><a href="#ai-engine">AI Engine</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="#patient" class="btn btn-outline">Patient Login</a>
+    <a href="#doctor" class="btn btn-primary">Doctor Portal</a>
+  </div>
+</nav>
+
+
+<!-- ── HERO ── -->
+<section id="hero" class="full-width">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-glow"></div>
+
+  <div class="hero-content">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Universal Medical Identity Platform</div>
+      <h1 class="hero-title">
+        <span>VitalID</span><br>
+        Your Health,<br>
+        One Scan Away.
+      </h1>
+      <p class="hero-subtitle">
+        A secure, universal medical identity card for every individual — containing full medical history, treatments, allergies, and prescriptions. Accessible instantly via QR scan. Built for emergencies.
+      </p>
+
+      <!-- ECG line -->
+      <div class="ecg-container" style="margin-bottom:28px">
+        <svg viewBox="0 0 800 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+          <polyline
+            fill="none"
+            stroke="#00C853"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            points="
+              0,24 40,24 50,24 60,4 70,44 80,10 90,38 100,24 140,24
+              180,24 190,24 200,4 210,44 220,10 230,38 240,24 280,24
+              320,24 330,24 340,4 350,44 360,10 370,38 380,24 420,24
+              460,24 470,24 480,4 490,44 500,10 510,38 520,24 560,24
+              600,24 610,24 620,4 630,44 640,10 650,38 660,24 700,24
+              740,24 750,24 760,4 770,44 780,10 790,38 800,24
+            "
+          />
+        </svg>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#patient" class="btn btn-primary">
+          <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="12" height="10" rx="1"/><path d="M8 7v4M6 9h4"/></svg>
+          Create VitalID
+        </a>
+        <a href="#how-it-works" class="btn btn-outline">See How It Works</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-counter="2.3" data-suffix="s" data-decimals="1">2.3s</span>
+          <span class="hero-stat-label">Avg. record retrieval</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-counter="47" data-suffix="">47</span>
+          <span class="hero-stat-label">Rare cases solved</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-counter="12" data-suffix="">12</span>
+          <span class="hero-stat-label">Countries active</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- QR Card Visual -->
+    <div class="hero-right qr-visual aos">
+      <div class="qr-card">
+        <div class="scan-indicator"></div>
+        <div class="qr-card-header">
+          <div>
+            <div class="qr-card-id" style="margin-bottom:4px">VITAL IDENTITY CARD</div>
+            <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-muted)">v2.4.1 — ENCRYPTED</div>
+          </div>
+          <div class="tag tag-green">Active</div>
+        </div>
+
+        <!-- QR Code SVG (geometric pattern) -->
+        <div class="qr-code-wrap">
+          <svg viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg" style="image-rendering:pixelated">
+            <rect width="21" height="21" fill="#0C120C"/>
+            <!-- top-left finder -->
+            <rect x="1" y="1" width="7" height="7" fill="#00C853"/>
+            <rect x="2" y="2" width="5" height="5" fill="#0C120C"/>
+            <rect x="3" y="3" width="3" height="3" fill="#00C853"/>
+            <!-- top-right finder -->
+            <rect x="13" y="1" width="7" height="7" fill="#00C853"/>
+            <rect x="14" y="2" width="5" height="5" fill="#0C120C"/>
+            <rect x="15" y="3" width="3" height="3" fill="#00C853"/>
+            <!-- bottom-left finder -->
+            <rect x="1" y="13" width="7" height="7" fill="#00C853"/>
+            <rect x="2" y="14" width="5" height="5" fill="#0C120C"/>
+            <rect x="3" y="15" width="3" height="3" fill="#00C853"/>
+            <!-- data modules (pattern) -->
+            <rect x="9" y="1" width="1" height="1" fill="#00C853"/>
+            <rect x="11" y="1" width="1" height="1" fill="#00C853"/>
+            <rect x="9" y="3" width="2" height="1" fill="#00C853"/>
+            <rect x="9" y="5" width="1" height="1" fill="#00C853"/>
+            <rect x="11" y="5" width="1" height="1" fill="#00C853"/>
+            <rect x="9" y="7" width="1" height="2" fill="#00C853"/>
+            <rect x="11" y="7" width="2" height="1" fill="#00C853"/>
+            <rect x="1" y="9" width="1" height="2" fill="#00C853"/>
+            <rect x="3" y="9" width="1" height="1" fill="#00C853"/>
+            <rect x="5" y="9" width="2" height="1" fill="#00C853"/>
+            <rect x="9" y="9" width="1" height="1" fill="#00C853"/>
+            <rect x="11" y="9" width="1" height="1" fill="#00C853"/>
+            <rect x="13" y="9" width="1" height="2" fill="#00C853"/>
+            <rect x="15" y="9" width="1" height="1" fill="#00C853"/>
+            <rect x="17" y="9" width="2" height="1" fill="#00C853"/>
+            <rect x="1" y="11" width="2" height="1" fill="#00C853"/>
+            <rect x="4" y="11" width="1" height="1" fill="#00C853"/>
+            <rect x="6" y="11" width="1" height="1" fill="#00C853"/>
+            <rect x="9" y="11" width="2" height="1" fill="#00C853"/>
+            <rect x="14" y="11" width="2" height="1" fill="#00C853"/>
+            <rect x="17" y="11" width="1" height="2" fill="#00C853"/>
+            <rect x="19" y="11" width="1" height="1" fill="#00C853"/>
+            <rect x="9" y="13" width="1" height="1" fill="#00C853"/>
+            <rect x="11" y="13" width="2" height="1" fill="#00C853"/>
+            <rect x="9" y="15" width="3" height="1" fill="#00C853"/>
+            <rect x="13" y="15" width="1" height="2" fill="#00C853"/>
+            <rect x="15" y="15" width="1" height="1" fill="#00C853"/>
+            <rect x="17" y="15" width="3" height="1" fill="#00C853"/>
+            <rect x="9" y="17" width="1" height="1" fill="#00C853"/>
+            <rect x="11" y="17" width="1" height="1" fill="#00C853"/>
+            <rect x="15" y="17" width="1" height="2" fill="#00C853"/>
+            <rect x="17" y="17" width="1" height="1" fill="#00C853"/>
+            <rect x="19" y="17" width="1" height="2" fill="#00C853"/>
+            <rect x="9" y="19" width="2" height="1" fill="#00C853"/>
+            <rect x="12" y="19" width="1" height="1" fill="#00C853"/>
+          </svg>
+        </div>
+
+        <div class="qr-patient-info">
+          <div class="qr-info-item">
+            <label>Patient</label>
+            <span>Aryan Mehta</span>
+          </div>
+          <div class="qr-info-item">
+            <label>VID</label>
+            <span style="color:var(--green)">VID-8842-KX</span>
+          </div>
+          <div class="qr-info-item">
+            <label>Blood Group</label>
+            <span>B+</span>
+          </div>
+          <div class="qr-info-item">
+            <label>Critical Allergy</label>
+            <span style="color:var(--danger)">Penicillin</span>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;padding-top:12px;border-top:1px solid var(--border);text-align:center">
+          <span style="font-family:var(--font-mono);font-size:9px;color:var(--text-muted);letter-spacing:.15em">
+            AES-256 ENCRYPTED  ·  SCAN TO ACCESS FULL RECORDS
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="h-divider">
+
+
+<!-- ── HOW IT WORKS ── -->
+<section id="how-it-works">
+  <div class="section-label">Process</div>
+  <h2 class="section-title">How <strong>VitalID</strong> Works</h2>
+  <p class="section-desc">Three steps from patient onboarding to instant, role-based medical access — anywhere, anytime.</p>
+
+  <div class="steps-grid">
+    <!-- Step 1 -->
+    <div class="step aos">
+      <div class="step-num">01 / Patient</div>
+      <div class="step-icon">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#00C853" stroke-width="1.5">
+          <circle cx="8" cy="5" r="3"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
+        </svg>
+      </div>
+      <div class="step-title">Create VitalID Profile</div>
+      <div class="step-desc">
+        Patient registers their complete medical history — conditions, allergies, prescriptions, past surgeries — protected by a personal password they control.
+      </div>
+      <div style="margin-top:16px">
+        <span class="tag tag-muted">Self-service</span>
+        <span class="tag tag-green" style="margin-left:6px">Encrypted</span>
+      </div>
+    </div>
+
+    <div class="step-connector">
+      <div class="step-connector-line"></div>
+      <div class="step-connector-arrow"></div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step aos">
+      <div class="step-num">02 / Doctor</div>
+      <div class="step-icon">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#00C853" stroke-width="1.5">
+          <rect x="2" y="2" width="12" height="12" rx="1"/>
+          <path d="M5 8h6M8 5v6"/>
+        </svg>
+      </div>
+      <div class="step-title">Scan QR + Authenticate</div>
+      <div class="step-desc">
+        Doctor scans the patient's QR code on any device. They then authenticate with their verified medical license number to confirm their identity and access rights.
+      </div>
+      <div style="margin-top:16px">
+        <span class="tag tag-muted">License verified</span>
+        <span class="tag tag-warning" style="margin-left:6px">RBAC</span>
+      </div>
+    </div>
+
+    <div class="step-connector">
+      <div class="step-connector-line"></div>
+      <div class="step-connector-arrow"></div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step aos">
+      <div class="step-num">03 / Access</div>
+      <div class="step-icon">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#00C853" stroke-width="1.5">
+          <path d="M2 8h12M8 2l6 6-6 6"/>
+        </svg>
+      </div>
+      <div class="step-title">Role-Based Record Access</div>
+      <div class="step-desc">
+        Instant access to the patient's complete record. Licensed doctors see all layers including restricted clinical notes. Role-based control prevents unauthorized viewing.
+      </div>
+      <div style="margin-top:16px">
+        <span class="tag tag-green">Instant</span>
+        <span class="tag tag-red" style="margin-left:6px">Restricted Zone</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── PATIENT DASHBOARD ── -->
+<section id="patient" class="section-alt" style="padding-top:80px;padding-bottom:80px">
+<div class="section-inner">
+  <div class="section-label">Patient View</div>
+  <h2 class="section-title">Your <strong>Medical Identity</strong></h2>
+  <p class="section-desc">Everything a doctor needs — organized, secure, and always accessible. You control who sees what.</p>
+
+  <div class="dashboard-wrap aos">
+    <div class="dashboard-topbar">
+      <div class="dashboard-topbar-title">VitalID Patient Portal — Aryan Mehta (VID-8842-KX)</div>
+      <div style="display:flex;gap:10px;align-items:center">
+        <span class="tag tag-green">Session Active</span>
+        <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">Last accessed: Today 14:32</span>
+      </div>
+    </div>
+
+    <div class="dashboard-body">
+      <!-- Sidebar -->
+      <div class="dashboard-sidebar">
+        <div class="patient-avatar-block">
+          <div class="patient-avatar">AM</div>
+          <div class="patient-name">Aryan Mehta</div>
+          <div class="patient-id">VID-8842-KX</div>
+          <div style="margin-top:10px"><span class="tag tag-green">B+ Blood Group</span></div>
+        </div>
+
+        <ul class="sidebar-nav">
+          <li><a href="#" class="active" data-tab="overview">
+            <span class="nav-dot"></span>Overview
+          </a></li>
+          <li><a href="#" data-tab="prescriptions">
+            <span class="nav-dot"></span>Prescriptions
+          </a></li>
+          <li><a href="#" data-tab="history">
+            <span class="nav-dot"></span>Medical History
+          </a></li>
+          <li><a href="#" data-tab="allergies">
+            <span class="nav-dot"></span>Allergies
+          </a></li>
+          <li>
+            <a href="#" style="opacity:.4;cursor:default;pointer-events:none">
+              <span class="nav-dot" style="background:var(--danger)"></span>
+              <span style="color:var(--danger)">Restricted Zone</span>
+            </a>
+          </li>
+        </ul>
+
+        <div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--border)">
+          <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px">Quick Facts</div>
+          <div class="field-row">
+            <span class="key">Age</span>
+            <span class="val">22</span>
+          </div>
+          <div class="field-row">
+            <span class="key">Height</span>
+            <span class="val">5ft 11in</span>
+          </div>
+          <div class="field-row">
+            <span class="key">Weight</span>
+            <span class="val">72 kg</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main content -->
+      <div class="dashboard-main">
+        <!-- Overview Tab -->
+        <div id="tab-overview" class="dashboard-tab">
+          <div class="records-grid">
+            <div class="record-block">
+              <div class="record-block-label">Blood Group</div>
+              <div class="record-value">B+</div>
+              <div style="font-size:12px;color:var(--text-secondary);margin-top:6px">Rh-positive, universal donor compatible</div>
+            </div>
+            <div class="record-block">
+              <div class="record-block-label">Critical Allergies</div>
+              <div class="allergy-list">
+                <span class="tag tag-red">Penicillin</span>
+                <span class="tag tag-red">Sulfa drugs</span>
+                <span class="tag tag-warning">Latex</span>
+              </div>
+            </div>
+            <div class="record-block">
+              <div class="record-block-label">Active Conditions</div>
+              <div class="record-list">
+                <div class="record-list-item">
+                  <span>Mild asthma</span>
+                  <span class="tag tag-warning">Managed</span>
+                </div>
+                <div class="record-list-item">
+                  <span>Myopia (-2.5 / -3.0)</span>
+                  <span class="tag tag-muted">Stable</span>
+                </div>
+              </div>
+            </div>
+            <div class="record-block">
+              <div class="record-block-label">Vaccinations</div>
+              <div class="record-list">
+                <div class="record-list-item">
+                  <span>COVID-19 (Covishield)</span>
+                  <span class="tag tag-green">Done</span>
+                </div>
+                <div class="record-list-item">
+                  <span>Hepatitis B</span>
+                  <span class="tag tag-green">Done</span>
+                </div>
+                <div class="record-list-item">
+                  <span>Typhoid</span>
+                  <span class="tag tag-green">Done</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:4px">
+            <div style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:12px">Recent Visits</div>
+            <div class="record-list">
+              <div class="record-list-item">
+                <span>General Consultation — Dr. Sharma, Apollo Pune</span>
+                <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">14 Mar 2025</span>
+              </div>
+              <div class="record-list-item">
+                <span>Pulmonology Follow-up — Chest X-ray clear</span>
+                <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">02 Jan 2025</span>
+              </div>
+              <div class="record-list-item">
+                <span>Eye Checkup — Prescription renewed</span>
+                <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">18 Nov 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Restricted Zone (blurred for patient) -->
+          <div style="margin-top:20px">
+            <div style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:10px">Access Zones</div>
+            <div class="restricted-zone" style="position:relative;min-height:100px">
+              <div class="restricted-zone-header">
+                <div class="lock-icon" style="flex-shrink:0"></div>
+                <span class="restricted-zone-label">Restricted Clinical Zone</span>
+              </div>
+              <div class="restricted-content-blur">
+                <div class="field-row"><span class="key">Diagnosis</span><span class="val">Generalised Anxiety Disorder (DSM-5)</span></div>
+                <div class="field-row"><span class="key">Psychiatrist</span><span class="val">Dr. Rao, NIMHANS</span></div>
+                <div class="field-row"><span class="key">Medication</span><span class="val">Escitalopram 10mg — ongoing</span></div>
+              </div>
+              <div class="restricted-overlay">
+                <div class="restricted-overlay-text">
+                  This section is only accessible<br>to verified licensed physicians.
+                </div>
+                <span class="tag tag-red" style="margin-top:6px">Doctor access required</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prescriptions Tab -->
+        <div id="tab-prescriptions" class="dashboard-tab" style="display:none">
+          <div style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:14px">Current Prescriptions</div>
+          <div class="record-list">
+            <div class="record-list-item" style="padding:10px 0">
+              <div>
+                <div style="font-size:13px;font-weight:500;margin-bottom:3px">Budecort 200 Inhaler</div>
+                <div style="font-size:11px;color:var(--text-secondary)">2 puffs twice daily — Asthma management</div>
+              </div>
+              <span class="tag tag-green">Active</span>
+            </div>
+            <div class="record-list-item" style="padding:10px 0">
+              <div>
+                <div style="font-size:13px;font-weight:500;margin-bottom:3px">Salbutamol 100mcg (Rescue)</div>
+                <div style="font-size:11px;color:var(--text-secondary)">As needed — acute bronchospasm</div>
+              </div>
+              <span class="tag tag-warning">PRN</span>
+            </div>
+          </div>
+          <div style="margin-top:20px;font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:14px">Past Medications</div>
+          <div class="record-list">
+            <div class="record-list-item">
+              <span>Amoxicillin 500mg (DISCONTINUED — Reaction)</span>
+              <span class="tag tag-red">Discontinued</span>
+            </div>
+            <div class="record-list-item">
+              <span>Cetirizine 10mg</span>
+              <span class="tag tag-muted">Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- History Tab -->
+        <div id="tab-history" class="dashboard-tab" style="display:none">
+          <div style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:14px">Medical History Timeline</div>
+          <div class="record-list">
+            <div class="record-list-item" style="padding:10px 0">
+              <div>
+                <div style="font-size:13px;font-weight:500">Asthma Diagnosis</div>
+                <div style="font-size:11px;color:var(--text-secondary)">Diagnosed age 12 — Mild persistent. No hospitalizations.</div>
+              </div>
+              <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">2014</span>
+            </div>
+            <div class="record-list-item" style="padding:10px 0">
+              <div>
+                <div style="font-size:13px;font-weight:500">Allergic Reaction — Penicillin</div>
+                <div style="font-size:11px;color:var(--text-secondary)">Urticaria and angioedema. Treated with antihistamines. Flagged as severe.</div>
+              </div>
+              <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">2018</span>
+            </div>
+            <div class="record-list-item" style="padding:10px 0">
+              <div>
+                <div style="font-size:13px;font-weight:500">Appendectomy</div>
+                <div style="font-size:11px;color:var(--text-secondary)">Laparoscopic procedure. Ruby Hall Clinic, Pune. No complications.</div>
+              </div>
+              <span style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">2021</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Allergies Tab -->
+        <div id="tab-allergies" class="dashboard-tab" style="display:none">
+          <div style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:14px">Allergy Profile</div>
+          <div class="record-list">
+            <div class="record-list-item" style="padding:12px 0">
+              <div>
+                <div style="font-size:13px;font-weight:500;color:var(--danger)">Penicillin / Beta-lactam antibiotics</div>
+                <div style="font-size:11px;color:var(--text-secondary);margin-top:3px">Reaction: Urticaria, angioedema. Severity: Severe. Do NOT administer.</div>
+              </div>
+              <span class="tag tag-red">Critical</span>
+            </div>
+            <div class="record-list-item" style="padding:12px 0">
+              <div>
+                <div style="font-size:13px;font-weight:500;color:var(--danger)">Sulfonamides</div>
+                <div style="font-size:11px;color:var(--text-secondary);margin-top:3px">Reaction: Rash, pruritis. Cross-reactive with Penicillin allergy.</div>
+              </div>
+              <span class="tag tag-red">Severe</span>
+            </div>
+            <div class="record-list-item" style="padding:12px 0">
+              <div>
+                <div style="font-size:13px;font-weight:500">Latex</div>
+                <div style="font-size:11px;color:var(--text-secondary);margin-top:3px">Contact dermatitis. Gloves must be latex-free.</div>
+              </div>
+              <span class="tag tag-warning">Moderate</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- ── DOCTOR PORTAL ── -->
+<section id="doctor">
+  <div class="section-label">Doctor Access</div>
+  <h2 class="section-title">The <strong>Doctor Portal</strong></h2>
+  <p class="section-desc">Scan QR, verify your license, get instant full-record access — including the restricted clinical zone invisible to the patient.</p>
+
+  <div class="two-col">
+    <!-- Auth modal demo -->
+    <div>
+      <div style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:16px">Authentication Flow</div>
+
+      <!-- Scan step -->
+      <div id="scan-step" class="auth-modal-demo">
+        <div class="modal-header">
+          <span class="modal-header-title">QR Scan — Step 1 of 2</span>
+          <span class="tag tag-muted">Waiting</span>
+        </div>
+        <div class="modal-body">
+          <div style="text-align:center;padding:20px 0">
+            <div style="width:80px;height:80px;border:2px solid var(--green-border);margin:0 auto 16px;display:flex;align-items:center;justify-content:center;position:relative">
+              <div style="width:40px;height:40px;border:1px solid var(--green-dim)"></div>
+              <div style="position:absolute;top:0;left:0;right:0;height:2px;background:var(--green);animation:scan-line 2s linear infinite;box-shadow:0 0 6px var(--green)"></div>
+            </div>
+            <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-secondary);margin-bottom:20px">
+              Point camera at patient's VitalID card
+            </div>
+            <button id="qr-scan-btn" class="btn btn-primary" style="width:100%">
+              Simulate QR Scan
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Verify step -->
+      <div id="verify-step" class="auth-modal-demo" style="display:none">
+        <div class="modal-header">
+          <span class="modal-header-title">License Verification — Step 2 of 2</span>
+          <span class="tag tag-green">QR Matched</span>
+        </div>
+        <div class="modal-body">
+          <div style="background:var(--surface-3);border:1px solid var(--green-border);padding:10px 12px;margin-bottom:16px">
+            <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted);margin-bottom:2px">Patient identified:</div>
+            <div style="font-family:var(--font-mono);font-size:13px;color:var(--green)">Aryan Mehta — VID-8842-KX</div>
+          </div>
+          <div class="form-field">
+            <label class="form-label">Medical License Number</label>
+            <input id="license-input" class="form-input" type="text" placeholder="Enter your MCI license number">
+          </div>
+          <div class="form-field">
+            <label class="form-label">Specialty</label>
+            <input class="form-input" type="text" value="General Physician" readonly style="color:var(--text-secondary)">
+          </div>
+          <button id="verify-btn" class="btn btn-primary" style="width:100%;justify-content:center">
+            Verify and Access Records
+          </button>
+          <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-muted);text-align:center;margin-top:10px;letter-spacing:.06em">
+            Access logged with timestamp and license ID
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Doctor record view (revealed after auth) -->
+    <div>
+      <div style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--text-muted);margin-bottom:16px">Full Clinical Record View</div>
+      <div id="doctor-record-view" class="doctor-record" style="display:none">
+        <div class="doctor-record-header">
+          <div>
+            <div style="font-size:15px;font-weight:500;margin-bottom:3px">Aryan Mehta</div>
+            <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted)">VID-8842-KX  ·  DOB: 14 Aug 2002  ·  Male</div>
+          </div>
+          <span class="access-badge">Full Access Granted</span>
+        </div>
+
+        <div class="field-row"><span class="key">Blood Group</span><span class="val">B+ (Rh Positive)</span></div>
+        <div class="field-row"><span class="key">Critical Allergy</span><span class="val" style="color:var(--danger)">Penicillin — SEVERE</span></div>
+        <div class="field-row"><span class="key">Active Conditions</span><span class="val">Mild asthma, Myopia</span></div>
+        <div class="field-row"><span class="key">Medications</span><span class="val">Budecort 200 inhaler</span></div>
+        <div class="field-row"><span class="key">Surgeries</span><span class="val">Appendectomy (2021)</span></div>
+
+        <!-- Restricted zone revealed -->
+        <div class="restricted-revealed">
+          <div class="restricted-revealed-header">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="var(--danger)" stroke-width="2">
+              <path d="M8 2L2 14h12L8 2z"/><path d="M8 7v3"/><circle cx="8" cy="12.5" r=".8" fill="var(--danger)"/>
+            </svg>
+            Restricted Clinical Zone — Doctor Access Only
+          </div>
+          <div class="field-row"><span class="key">Psychiatric Diagnosis</span><span class="val">Generalised Anxiety Disorder (DSM-5)</span></div>
+          <div class="field-row"><span class="key">Treating Psychiatrist</span><span class="val">Dr. Rao, NIMHANS Bangalore</span></div>
+          <div class="field-row"><span class="key">Psychiatric Medication</span><span class="val">Escitalopram 10mg — ongoing</span></div>
+          <div class="field-row"><span class="key">Session Notes</span><span class="val">Moderate-severe GAD; CBT ongoing</span></div>
+          <div style="font-family:var(--font-mono);font-size:9px;color:#FF444460;margin-top:8px;letter-spacing:.06em">
+            This section is not visible to the patient. Do not discuss without consent.
+          </div>
+        </div>
+      </div>
+
+      <!-- Placeholder before auth -->
+      <div id="doctor-placeholder" class="results-placeholder" style="min-height:280px">
+        <div style="width:32px;height:32px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="var(--text-muted)" stroke-width="1.5"><rect x="3" y="7" width="10" height="8" rx="1"/><path d="M5 7V5a3 3 0 016 0v2"/></svg>
+        </div>
+        Complete authentication to view full patient record
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // hide placeholder when record revealed
+    document.getElementById('verify-btn') && document.getElementById('verify-btn').addEventListener('click', function() {
+      setTimeout(() => {
+        const ph = document.getElementById('doctor-placeholder');
+        if (ph) ph.style.display = 'none';
+      }, 1400);
+    });
+  </script>
+</section>
+
+
+<!-- ── SECURITY ARCHITECTURE ── -->
+<section style="padding-top:40px;padding-bottom:80px;background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);max-width:none;padding-left:48px;padding-right:48px">
+<div style="max-width:1200px;margin:0 auto">
+  <div class="section-label">Privacy Architecture</div>
+  <h2 class="section-title">Built on <strong>Zero-Trust Security</strong></h2>
+
+  <div class="features-grid" style="margin-top:40px">
+    <div class="feature-cell">
+      <div class="feature-icon">
+        <svg viewBox="0 0 16 16" fill="none" stroke="#00C853" stroke-width="1.5">
+          <path d="M8 2l5 2.5v4C13 12 8 15 8 15S3 12 3 8.5v-4L8 2z"/>
+        </svg>
+      </div>
+      <div class="feature-name">AES-256 Encryption</div>
+      <div class="feature-desc">End-to-end encryption on all records. Data at rest and in transit fully protected — no plaintext ever stored.</div>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">
+        <svg viewBox="0 0 16 16" fill="none" stroke="#00C853" stroke-width="1.5">
+          <circle cx="8" cy="5" r="3"/><path d="M2 14c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
+          <path d="M11 10l1.5 1.5L15 9" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <div class="feature-name">Doctor License Verification</div>
+      <div class="feature-desc">Every doctor access request is authenticated against a live medical council database before any records are exposed.</div>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">
+        <svg viewBox="0 0 16 16" fill="none" stroke="#00C853" stroke-width="1.5">
+          <rect x="3" y="7" width="10" height="8" rx="1"/><path d="M5 7V5a3 3 0 016 0v2"/>
+          <circle cx="8" cy="11" r="1" fill="#00C853"/>
+        </svg>
+      </div>
+      <div class="feature-name">Restricted Zone</div>
+      <div class="feature-desc">Sensitive diagnoses (psychiatric, oncological) are hidden in a layer completely invisible to patients — accessible only by licensed physicians.</div>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">
+        <svg viewBox="0 0 16 16" fill="none" stroke="#00C853" stroke-width="1.5">
+          <circle cx="8" cy="8" r="6"/><path d="M8 4v4l3 1.5"/>
+        </svg>
+      </div>
+      <div class="feature-name">Full Access Audit Log</div>
+      <div class="feature-desc">Every record access is timestamped and logged with the doctor's license ID. Patients can view their access history at any time.</div>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">
+        <svg viewBox="0 0 16 16" fill="none" stroke="#00C853" stroke-width="1.5">
+          <path d="M2 4h12v8a2 2 0 01-2 2H4a2 2 0 01-2-2V4z"/><path d="M2 4l6-2 6 2"/>
+        </svg>
+      </div>
+      <div class="feature-name">Patient-Controlled Password</div>
+      <div class="feature-desc">Patients set a personal unlock password for their profile. No hospital, insurer, or third party can access records without it.</div>
+    </div>
+    <div class="feature-cell">
+      <div class="feature-icon">
+        <svg viewBox="0 0 16 16" fill="none" stroke="#00C853" stroke-width="1.5">
+          <rect x="1" y="3" width="14" height="10" rx="1"/>
+          <path d="M5 9h6M8 6v6"/>
+        </svg>
+      </div>
+      <div class="feature-name">Role-Based Access Control</div>
+      <div class="feature-desc">Specialists see only specialty-relevant fields. Emergency physicians see critical data first. Granular permission layers, always.</div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- ── CASE BOARD ── -->
+<section id="case-board">
+  <div class="section-label">Medical GitHub</div>
+  <h2 class="section-title">Collaborative <strong>Case Board</strong></h2>
+  <p class="section-desc">Doctors anonymously upload rare or complex cases. The global medical community collaborates to diagnose what no single doctor can alone.</p>
+
+  <div style="display:flex;gap:12px;margin-top:32px;margin-bottom:40px;align-items:center">
+    <span class="tag tag-green">4,219 cases uploaded</span>
+    <span class="tag tag-muted">38 countries</span>
+    <span class="tag tag-muted">Anonymous submissions</span>
+    <span class="tag tag-warning">Open peer review</span>
+  </div>
+
+  <div class="cases-grid">
+
+    <!-- Case 1 -->
+    <div class="case-card aos">
+      <div class="case-card-header">
+        <div>
+          <div class="case-id">CASE-2024-0847</div>
+          <div style="margin-top:5px"><span class="tag tag-red">Unresolved</span></div>
+        </div>
+        <span class="tag tag-muted">Neurology</span>
+      </div>
+      <div class="case-body">
+        <div class="case-title">Progressive Asymmetric Tremor, Age 28</div>
+        <div class="case-symptoms">
+          Resting tremor right hand, bradykinesia, cogwheel rigidity. Unusual onset age. Normal DaTscan. No family history.
+        </div>
+      </div>
+      <div class="case-footer">
+        <span class="case-footer-stat"><span>14</span> comments</span>
+        <span class="case-footer-stat"><span>3</span> hypotheses</span>
+        <span style="font-family:var(--font-mono);font-size:9px;color:var(--text-muted)">Click to expand</span>
+      </div>
+      <div class="case-expanded-body">
+        <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px">Doctor Comments</div>
+        <div class="comments-list">
+          <div class="comment">
+            <div class="comment-avatar">DS</div>
+            <div class="comment-content">
+              <div class="comment-author">Dr. S. — Neurologist, Germany</div>
+              <div class="comment-text">Have you ruled out Wilson's disease despite normal age? Kayser-Fleischer rings on slit lamp and ceruloplasmin levels would be informative here.</div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="comment-avatar">PK</div>
+            <div class="comment-content">
+              <div class="comment-author">Dr. K. — Movement Disorders, India</div>
+              <div class="comment-text">Consider Young Onset Parkinson's. LRRK2/PINK1 genetic panel warranted. The DaTscan result may be false negative at this stage.</div>
+            </div>
+          </div>
+        </div>
+        <div class="ai-suggestion">
+          <div class="ai-suggestion-label">AI Engine Suggestion</div>
+          <div class="ai-suggestion-text">3 similar cases in database — 2 resolved as Young Onset PD, 1 as Wilson's Disease. Recommend ceruloplasmin + genetic panel in parallel.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 2 -->
+    <div class="case-card aos">
+      <div class="case-card-header">
+        <div>
+          <div class="case-id">CASE-2024-1102</div>
+          <div style="margin-top:5px"><span class="tag tag-green">Resolved</span></div>
+        </div>
+        <span class="tag tag-muted">Autoimmune</span>
+      </div>
+      <div class="case-body">
+        <div class="case-title">Cyclic Fever Every 28 Days, 3 Years</div>
+        <div class="case-symptoms">
+          Precise 28-day fever cycles, oral ulcers, cervical adenopathy. Normal immunoglobulins. Negative ANA/ANCA. 11 prior hospital admissions.
+        </div>
+      </div>
+      <div class="case-footer">
+        <span class="case-footer-stat"><span>22</span> comments</span>
+        <span class="case-footer-stat"><span>5</span> hypotheses</span>
+        <span style="font-family:var(--font-mono);font-size:9px;color:var(--text-muted)">Click to expand</span>
+      </div>
+      <div class="case-expanded-body">
+        <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px">Resolution</div>
+        <div class="comments-list">
+          <div class="comment">
+            <div class="comment-avatar">MR</div>
+            <div class="comment-content">
+              <div class="comment-author">Dr. R. — Rheumatology, UK</div>
+              <div class="comment-text">Classic PFAPA presentation. The 28-day periodicity with ulcers and adenopathy is pathognomonic. Corticosteroid challenge will abort the cycle — single dose at fever onset.</div>
+            </div>
+          </div>
+        </div>
+        <div class="ai-suggestion">
+          <div class="ai-suggestion-label">AI Engine — Confirmed Match</div>
+          <div class="ai-suggestion-text">98% similarity match to 7 prior PFAPA cases in database. Diagnosis confirmed and case marked resolved. Average time to diagnosis across similar cases: 2.3 years.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 3 -->
+    <div class="case-card aos">
+      <div class="case-card-header">
+        <div>
+          <div class="case-id">CASE-2025-0031</div>
+          <div style="margin-top:5px"><span class="tag tag-warning">In Progress</span></div>
+        </div>
+        <span class="tag tag-muted">Cardiology</span>
+      </div>
+      <div class="case-body">
+        <div class="case-title">Recurrent Syncope, Structurally Normal Heart</div>
+        <div class="case-symptoms">
+          Episodic syncope without prodrome. Normal echo, Holter, tilt-table. Post-exertional pattern. Female, 19. Family history sudden cardiac death.
+        </div>
+      </div>
+      <div class="case-footer">
+        <span class="case-footer-stat"><span>9</span> comments</span>
+        <span class="case-footer-stat"><span>4</span> hypotheses</span>
+        <span style="font-family:var(--font-mono);font-size:9px;color:var(--text-muted)">Click to expand</span>
+      </div>
+      <div class="case-expanded-body">
+        <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px">Current Hypotheses</div>
+        <div class="comments-list">
+          <div class="comment">
+            <div class="comment-avatar">AT</div>
+            <div class="comment-content">
+              <div class="comment-author">Dr. T. — Electrophysiology, USA</div>
+              <div class="comment-text">Catecholaminergic polymorphic VT (CPVT) must be ruled out urgently given family history. Exercise stress test with continuous monitoring + CASQ2/RYR2 genetic sequencing.</div>
+            </div>
+          </div>
+        </div>
+        <div class="ai-suggestion">
+          <div class="ai-suggestion-label">AI Engine Suggestion</div>
+          <div class="ai-suggestion-text">Post-exertional pattern + structurally normal heart + family history SCD flagged in 4 prior cases — 3 confirmed CPVT, 1 Long QT Syndrome Type 1. Genetic testing recommended urgently.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Case 4 -->
+    <div class="case-card aos">
+      <div class="case-card-header">
+        <div>
+          <div class="case-id">CASE-2025-0198</div>
+          <div style="margin-top:5px"><span class="tag tag-red">Urgent</span></div>
+        </div>
+        <span class="tag tag-muted">Metabolic</span>
+      </div>
+      <div class="case-body">
+        <div class="case-title">Unexplained Hypoglycaemia, Non-Diabetic</div>
+        <div class="case-symptoms">
+          Recurrent hypoglycaemia unrelated to fasting or meals. Normal insulin, C-peptide. 34M. No medications. Normal CT pancreas.
+        </div>
+      </div>
+      <div class="case-footer">
+        <span class="case-footer-stat"><span>6</span> comments</span>
+        <span class="case-footer-stat"><span>2</span> hypotheses</span>
+        <span style="font-family:var(--font-mono);font-size:9px;color:var(--text-muted)">Click to expand</span>
+      </div>
+      <div class="case-expanded-body">
+        <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.1em;margin-bottom:10px">Ongoing Investigation</div>
+        <div class="comments-list">
+          <div class="comment">
+            <div class="comment-avatar">LB</div>
+            <div class="comment-content">
+              <div class="comment-author">Dr. B. — Endocrinology, France</div>
+              <div class="comment-text">Consider IGF-2 secreting non-islet tumour (NICTH) — rare but fits. Check IGF-2 to IGF-1 ratio. A ratio greater than 10 is diagnostic.</div>
+            </div>
+          </div>
+        </div>
+        <div class="ai-suggestion">
+          <div class="ai-suggestion-label">AI Engine Suggestion</div>
+          <div class="ai-suggestion-text">2 similar cases matched — both resolved as Non-islet cell tumor hypoglycemia (NICTH). Recommend IGF-2/IGF-1 ratio and full-body PET-CT.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ── AI ENGINE ── -->
+<section id="ai-engine" class="section-alt" style="padding-top:80px;padding-bottom:80px">
+<div class="section-inner">
+  <div class="section-label">AI Diagnosis Engine</div>
+  <h2 class="section-title"><strong>AI-Powered</strong> Symptom Matching</h2>
+  <p class="section-desc">Enter a patient's symptom cluster. Our ML model scans the global case database and surfaces similar cases, differential diagnoses, and clinical pathways.</p>
+
+  <div class="ai-panel aos">
+    <!-- Input Panel -->
+    <div class="ai-input-panel">
+      <div style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--text-muted);margin-bottom:12px">Symptom Input</div>
+
+      <div style="margin-bottom:12px">
+        <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-secondary);margin-bottom:8px;letter-spacing:.06em">Quick-add common symptoms:</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px">
+          <button class="preset-symptom tag tag-muted" style="cursor:pointer">Fatigue</button>
+          <button class="preset-symptom tag tag-muted" style="cursor:pointer">Cyclic fever</button>
+          <button class="preset-symptom tag tag-muted" style="cursor:pointer">Joint pain</button>
+          <button class="preset-symptom tag tag-muted" style="cursor:pointer">Oral ulcers</button>
+          <button class="preset-symptom tag tag-muted" style="cursor:pointer">Resting tremor</button>
+          <button class="preset-symptom tag tag-muted" style="cursor:pointer">Syncope</button>
+          <button class="preset-symptom tag tag-muted" style="cursor:pointer">Palpitations</button>
+        </div>
+      </div>
+
+      <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-secondary);margin-bottom:6px;letter-spacing:.06em">Active symptoms:</div>
+      <div id="symptom-tags" class="symptom-tags-input"></div>
+
+      <div class="add-symptom-row">
+        <input id="symptom-input" type="text" placeholder="Type a symptom and press Enter...">
+        <button id="add-symptom-btn" class="btn btn-outline" style="flex-shrink:0">Add</button>
+      </div>
+
+      <div style="margin-top:12px;padding-top:12px;border-top:1px solid var(--border)">
+        <div class="form-field">
+          <label class="form-label">Patient Age</label>
+          <input class="form-input" type="number" placeholder="e.g. 34" style="max-width:120px">
+        </div>
+        <div class="form-field">
+          <label class="form-label">Duration</label>
+          <input class="form-input" type="text" placeholder="e.g. 3 months">
+        </div>
+      </div>
+
+      <button id="run-analysis-btn" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px">
+        Run AI Analysis
+      </button>
+
+      <div style="font-family:var(--font-mono);font-size:9px;color:var(--text-muted);margin-top:10px;text-align:center;letter-spacing:.06em;line-height:1.6">
+        Model trained on 4,219 anonymised global cases.<br>
+        For clinical support only — not a diagnostic tool.
+      </div>
+    </div>
+
+    <!-- Results Panel -->
+    <div class="ai-results-panel">
+      <div style="font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--text-muted);margin-bottom:16px">Match Results</div>
+      <div id="ai-results">
+        <div class="results-placeholder">
+          <div style="width:24px;height:24px;border:2px solid var(--text-muted);border-radius:50%;margin:0 auto"></div>
+          Add symptoms and run analysis
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- ── IMPACT ── -->
+<section id="impact">
+  <div class="section-label">Vision</div>
+  <h2 class="section-title">Impact at <strong>Scale</strong></h2>
+  <p class="section-desc">VitalID turns isolated medical records into a living, collaborative healthcare network — faster emergency care, fewer misdiagnoses, a global knowledge base for rare diseases.</p>
+
+  <div class="impact-grid aos">
+    <div class="impact-cell">
+      <span class="impact-num" data-counter="2.3" data-suffix="s" data-decimals="1">2.3s</span>
+      <span class="impact-label">Average emergency record retrieval time</span>
+    </div>
+    <div class="impact-cell">
+      <span class="impact-num" data-counter="4219" data-suffix="">4219</span>
+      <span class="impact-label">Rare cases in collaborative database</span>
+    </div>
+    <div class="impact-cell">
+      <span class="impact-num" data-counter="47" data-suffix="">47</span>
+      <span class="impact-label">Unresolved rare conditions diagnosed via platform</span>
+    </div>
+    <div class="impact-cell">
+      <span class="impact-num" data-counter="12" data-suffix="">12</span>
+      <span class="impact-label">Countries with active doctor users</span>
+    </div>
+  </div>
+
+  <div style="margin-top:48px;padding:32px;background:var(--surface);border:1px solid var(--border);text-align:center" class="aos">
+    <div style="font-family:var(--font-mono);font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:.15em;margin-bottom:12px">Vision Statement</div>
+    <div style="font-size:clamp(18px,3vw,28px);font-weight:300;color:var(--text-primary);line-height:1.4;max-width:700px;margin:0 auto">
+      "One ID. Every Doctor.<br>
+      <strong style="font-weight:600;color:var(--green)">Infinite Possibilities.</strong>"
+    </div>
+  </div>
+</section>
+
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div>
+    <div class="nav-logo" style="margin-bottom:8px">
+      <div class="nav-logo-pulse"></div>
+      VitalID
+    </div>
+    <div class="footer-tagline">
+      <strong>One ID.</strong> Every Doctor. Infinite Possibilities.
+    </div>
+  </div>
+  <ul class="footer-links">
+    <li><a href="#how-it-works">How It Works</a></li>
+    <li><a href="#patient">Patient</a></li>
+    <li><a href="#doctor">Doctor</a></li>
+    <li><a href="#case-board">Cases</a></li>
+    <li><a href="#ai-engine">AI Engine</a></li>
+  </ul>
+  <div style="font-family:var(--font-mono);font-size:10px;color:var(--text-muted);text-align:right;line-height:1.8">
+    Prototype Build — VIT Pune Hackathon 2025<br>
+    All data shown is hardcoded and fictional
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
