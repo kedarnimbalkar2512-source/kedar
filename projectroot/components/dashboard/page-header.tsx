@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { LogoutButton } from "@/components/auth/logout-button";
 
 interface PageHeaderProps {
   eyebrow: string;
@@ -22,11 +23,14 @@ export function PageHeader({
         <h1 className="mt-3 font-serif text-4xl text-slate-900">{title}</h1>
         <p className="mt-3 text-sm leading-7 text-slate-600">{description}</p>
       </div>
-      {demoMode ? (
-        <Badge className="h-fit self-start" variant="warning">
-          Showing demo data until Supabase is connected
-        </Badge>
-      ) : null}
+      <div className="flex items-center gap-4">
+        {demoMode ? (
+          <Badge className="h-fit self-start" variant="warning">
+            Showing demo data until Supabase is connected
+          </Badge>
+        ) : null}
+        <LogoutButton />
+      </div>
     </div>
   );
 }
