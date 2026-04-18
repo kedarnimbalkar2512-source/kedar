@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 195 36% 96%;
+    --foreground: 212 39% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 212 39% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 212 39% 15%;
+    --primary: 187 71% 28%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 188 33% 92%;
+    --secondary-foreground: 212 39% 15%;
+    --muted: 194 24% 91%;
+    --muted-foreground: 212 16% 38%;
+    --accent: 39 84% 93%;
+    --accent-foreground: 25 48% 21%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 193 23% 84%;
+    --input: 193 23% 84%;
+    --ring: 187 71% 28%;
+    --sidebar: 210 35% 12%;
+    --sidebar-foreground: 190 17% 96%;
+    --sidebar-border: 210 24% 22%;
+    --radius: 1rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply min-h-screen bg-background font-sans text-foreground antialiased;
+    background-image:
+      radial-gradient(circle at top left, rgba(20, 184, 166, 0.12), transparent 30%),
+      radial-gradient(circle at top right, rgba(245, 158, 11, 0.10), transparent 22%),
+      linear-gradient(180deg, rgba(240, 249, 255, 0.96), rgba(248, 250, 252, 1));
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+}
+
+@layer components {
+  .panel-surface {
+    @apply rounded-3xl border border-white/60 bg-white/85 shadow-panel backdrop-blur;
+  }
+
+  .panel-muted {
+    @apply rounded-2xl border border-border/60 bg-slate-50/80;
+  }
+
+  .page-shell {
+    @apply min-h-screen bg-clinical-grid bg-[size:34px_34px];
+  }
+
+  .page-shell::before {
+    content: "";
+    @apply pointer-events-none fixed inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.18),transparent_62%)];
+  }
+
+  .data-pill {
+    @apply inline-flex items-center rounded-full border border-teal-200 bg-teal-50 px-3 py-1 text-xs font-semibold tracking-wide text-teal-900;
+  }
+}
