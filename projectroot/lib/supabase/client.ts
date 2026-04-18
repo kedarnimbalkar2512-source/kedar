@@ -10,9 +10,25 @@ export function getSupabaseEnv() {
   };
 }
 
+function isPlaceholderValue(value: string) {
+  const normalized = value.trim().toLowerCase();
+
+  return (
+    normalized.length === 0 ||
+    normalized.includes("your-project") ||
+    normalized.includes("your-anon-key") ||
+    normalized.includes("example")
+  );
+}
+
 export function hasSupabaseEnv() {
   const { url, anonKey } = getSupabaseEnv();
-  return Boolean(url && anonKey);
+  return Boolean(
+    url &&
+      anonKey &&
+      !isPlaceholderValue(url) &&
+      !isPlaceholderValue(anonKey)
+  );
 }
 
 export function createBrowserSupabaseClient() {
